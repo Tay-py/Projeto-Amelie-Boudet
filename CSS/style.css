@@ -1,0 +1,384 @@
+/* ======== ESTILOS GERAIS ======== */
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f7f9c9;
+        color: #5a2a00;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* ======== CABEÇALHO ======== */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        flex-wrap: wrap;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .logo-text {
+        font-weight: bold;
+        color: #c24800;
+        line-height: 1.2;
+        font-size: 18px;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        margin: 5px 15px;
+        color: #000;
+        font-weight: 500;
+        transition: color 0.2s;
+      }
+
+      nav a:hover,
+      nav a:focus {
+        color: #c24800;
+      }
+
+      /* ======== HERO ======== */
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 50px;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .hero-text {
+        flex: 1;
+        min-width: 280px;
+        max-width: 450px;
+      }
+
+      .hero-text h1 {
+        font-size: 2em;
+        color: #c24800;
+        margin-bottom: 10px;
+      }
+
+      .hero-text p {
+        font-size: 1.1em;
+        color: #333;
+        margin-bottom: 25px;
+      }
+
+      .hero-text button {
+        background-color: #f8bf4c;
+        border: none;
+        color: #4a2a00;
+        font-weight: bold;
+        padding: 12px 28px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.2s ease;
+      }
+
+      .hero-text button:hover {
+        background-color: #e2aa38;
+      }
+
+      .hero img {
+        width: 420px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* ======== BLOCO LEGADO ======== */
+      .bloco-legado {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff0b5;
+        padding: 50px;
+        border-radius: 20px;
+        gap: 40px;
+        flex-wrap: wrap;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        margin: 30px;
+      }
+
+      .texto-legado {
+        flex: 1;
+        max-width: 550px;
+      }
+
+      .texto-legado h2 {
+        font-size: 2em;
+        color: #7a3a00;
+        margin-bottom: 15px;
+      }
+
+      .texto-legado p {
+        font-size: 1.1em;
+        color: #3e2b00;
+        line-height: 1.6;
+      }
+
+      .bloco-legado img {
+        flex-shrink: 0;
+        width: 300px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* ======== CONTEÚDO PRINCIPAL ======== */
+      .conteudo-principal {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: #faffd6;
+        padding: 40px;
+        border-radius: 20px;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin: 30px;
+      }
+
+      .conteudo-texto {
+        flex: 2;
+        min-width: 300px;
+      }
+
+      .conteudo-texto h2 {
+        font-size: 2em;
+        color: #8a3a00;
+        margin-bottom: 10px;
+      }
+
+      .conteudo-texto p {
+        color: #333;
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+
+      /* ======== DOAÇÃO LATERAL ======== */
+      .doacao-lateral {
+        flex: 1;
+        background-color: #ffe89c;
+        border-radius: 20px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        min-width: 250px;
+      }
+
+      .doacao-lateral h3 {
+        color: #7a3a00;
+        font-size: 1.2em;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+
+      .opcoes-doacao {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 25px;
+      }
+
+      .botao-cinza {
+        background-color: #d3d3d3;
+        height: 40px;
+        border-radius: 8px;
+        border: none;
+        padding-left: 10px;
+        font-size: 0.95em;
+      }
+
+      .doacao-lateral button {
+        background-color: #f8bf4c;
+        border: none;
+        color: #4a2a00;
+        font-weight: bold;
+        padding: 12px 28px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.2s ease;
+      }
+
+      .doacao-lateral button:hover {
+        background-color: #e2aa38;
+      }
+
+      /* ======== CARROSSEL (agora dentro da Galeria) ======== */
+      .carousel-container {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 12px;
+        margin-top: 20px;
+      }
+
+      .slide {
+        display: none;
+        position: relative;
+        animation: fade 0.8s ease;
+      }
+
+      .slide.active {
+        display: block;
+      }
+
+      .slide img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+      }
+
+      .caption {
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        right: 0;
+        color: #fff;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 10px;
+        font-size: 1.1rem;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .prev,
+      .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.3);
+        border: none;
+        font-size: 2rem;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: background 0.3s;
+        z-index: 10;
+      }
+
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(255, 255, 255, 0.6);
+      }
+
+      .prev {
+        left: 15px;
+      }
+      .next {
+        right: 15px;
+      }
+
+      .dots {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .dot {
+        height: 12px;
+        width: 12px;
+        margin: 0 5px;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.4s;
+        cursor: pointer;
+      }
+
+      .dot.active {
+        background-color: #fff;
+      }
+
+      @media (max-width: 600px) {
+        .slide img {
+          height: 260px;
+        }
+        .caption {
+          font-size: 0.9rem;
+        }
+        .prev,
+        .next {
+          font-size: 1.5rem;
+          padding: 6px;
+        }
+      }
+
+      /* ======== RODAPÉ ======== */
+      footer {
+        text-align: center;
+        font-size: 0.9em;
+        color: #5a2a00;
+        margin: 20px 0;
+      }
+
+      /* ======== RESPONSIVIDADE ======== */
+      @media (max-width: 900px) {
+        .hero {
+          flex-direction: column;
+          text-align: center;
+          padding: 30px 20px;
+        }
+
+        .bloco-legado {
+          flex-direction: column-reverse;
+          text-align: center;
+          padding: 30px 20px;
+        }
+
+        .conteudo-principal {
+          flex-direction: column;
+          align-items: center;
+          padding: 30px 20px;
+        }
+
+        .conteudo-texto {
+          text-align: center;
+        }
+
+        nav {
+          justify-content: center;
+        }
+
+        header {
+          padding: 15px 20px;
+        }
+      }
