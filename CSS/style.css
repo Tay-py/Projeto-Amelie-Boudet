@@ -1,166 +1,20 @@
-/* ====================== */
-/*  ESTILOS GERAIS        */
-/* ====================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", Arial, sans-serif;
-}
 
 body {
-  background: #faf7c8; 
-  color: #4a3205;     
+  background: #FAFFD7;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
 }
 
-/* Centraliza todo o conteúdo e limita largura */
-body > div {
-  max-width: 1200px;
-  margin: auto;
-  background: #fff;
-  min-height: 100vh;
-  padding: 20px 40px;
-  border-radius: 12px;
+.quadrado{
+
+ background-image: ("") ;
+ background-size: 50px;
+
 }
 
-/* ====================== */
-/*  CABEÇALHO             */
-/* ====================== */
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-}
-
-header > div {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-header img {
-  width: 50px;
-  height: 50px;
-}
-
-header div div {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 1.1;
-}
-
-nav a {
-  margin-left: 25px;
-  text-decoration: none;
-  font-weight: 500;
-  color: #333;
-  transition: 0.2s;
-}
-
-nav a:hover {
-  color: #d87a00;
-}
-
-nav a.active {
-  color: #d87a00;
-  font-weight: 600;
-}
-
-/* ====================== */
-/*  PRIMEIRA SESSÃO       */
-/* ====================== */
-
-section:first-of-type {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px 0 30px 0;
-  gap: 40px;
-}
-
-section:first-of-type div h1 {
-  font-size: 40px;
-  font-weight: 700;
-  color: #c85a06;
-  margin-bottom: 10px;
-}
-
-section:first-of-type p {
-  max-width: 450px;
-  margin-bottom: 20px;
-  color: #555;
-}
-
-section:first-of-type a {
-  background: #f2b44a;
-  padding: 12px 25px;
-  color: #4a3205;
-  border-radius: 25px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-section:first-of-type a:hover {
-  background: #d99a36;
-}
-
-section:first-of-type img {
-  width: 300px;
-}
-
-/* ====================== */
-/*  SEGUNDA SESSÃO        */
-/* ====================== */
-
-section:nth-of-type(2) {
-  background: #f8e9a2;
-  border-radius: 20px;
-  padding: 40px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-}
-
-section:nth-of-type(2) h2 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: #8b5a10;
-}
-
-section:nth-of-type(2) p {
-  max-width: 600px;
-  line-height: 1.6;
-  color: #5a410b;
-}
-
-/* Imagem lateral */
-section:nth-of-type(2) ~ img {
-  display: block;
-  width: 250px;
-  margin: 20px auto;
-}
-
-/* ====================== */
-/*  RESPONSIVIDADE        */
-/* ====================== */
-
-@media (max-width: 900px) {
-  section:first-of-type,
-  section:nth-of-type(2) {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
+.cabecalho cabecalho3{
+  width: 50;
+  height: 200;
 }
