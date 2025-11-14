@@ -10,8 +10,8 @@
 }
 
 body {
-  background: #faf7c8; /* Amarelo super suave */
-  color: #4a3205;     /* Marrom suave */
+  background: #faf7c8; 
+  color: #4a3205;     
 }
 
 /* Centraliza todo o conteúdo e limita largura */
@@ -61,10 +61,9 @@ nav a {
 }
 
 nav a:hover {
-  color: #d87a00; /* Laranja do print */
+  color: #d87a00;
 }
 
-/* Destacar o link ativo (opcional) */
 nav a.active {
   color: #d87a00;
   font-weight: 600;
@@ -85,7 +84,7 @@ section:first-of-type {
 section:first-of-type div h1 {
   font-size: 40px;
   font-weight: 700;
-  color: #c85a06; /* Laranja mais escuro */
+  color: #c85a06;
   margin-bottom: 10px;
 }
 
@@ -142,7 +141,7 @@ section:nth-of-type(2) p {
 }
 
 /* Imagem lateral */
-section:nth-of-type(2) + img {
+section:nth-of-type(2) ~ img {
   display: block;
   width: 250px;
   margin: 20px auto;
