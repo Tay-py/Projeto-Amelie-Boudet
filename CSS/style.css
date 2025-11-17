@@ -5,16 +5,23 @@ body {
   background: #FAFFD7;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
+  
 }
 
 .quadrado{
 
- background-image: ("") ;
+ 
  background-size: 50px;
+ padding: 20px;
+ margin: 10px;
 
 }
 
-.cabecalho cabecalho3{
-  width: 50;
-  height: 200;
+.cbs{
+width: 80px;
+height: auto;
+}
+
+.imt{
+  justify-content: ;
 }
