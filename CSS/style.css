@@ -49,14 +49,14 @@ nav a {
 nav a:hover {
   color: #c24800;
 }
-
+ 
 .h1-title {
   background: #ffffff;
   padding: 10px 40px 40px 40px;
   border-radius: 12px;
   margin-top: 0;
 }
-
+ 
 .h1-responsivo {
   display: flex;
   align-items: center;
@@ -69,12 +69,15 @@ nav a:hover {
   color: #c24e1a;
 }
 .h1-responsivo .btn {
-  background: #c24e1a;
-  color: #ffffff;
+  background: #FFD461;
+  color: #833E19;
   transition: 0.2s;
+  font-weight: bold;
 }
 .h1-responsivo .btn:hover {
-  background: #8e370f;
+  background: #ff4800;
+  color: #fff;
+  font-weight: bold;
 }
 .h1-responsivo .img-exemplo {
   width: 100%;
@@ -137,3 +140,129 @@ nav a:hover {
     margin: 0 auto;
   }
 }
+ 
+.quem-somos-bloco {
+  background: #FAFFD7;
+  padding: 5px 5px;
+  margin: 5px 0;
+  border-radius: 12px;
+  color: #5c3a00;
+  line-height: 1.6;
+}
+ 
+.quadradinho {
+  margin-bottom: 20px;
+}
+ 
+.quemsomos {
+  color: #833e19;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.nossos-projetos-bloco {
+  background: #FAFFD7;
+  padding: 5px 5px;
+  margin: 5px 0;
+  border-radius: 12px;
+  color: #5c3a00;
+  line-height: 1.6;
+}
+.nossosprojetos {
+  color: #833e19;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.primeiroparagrafo {
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.segundoparagrafo {
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.paragrafozero {
+ 
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+ 
+.bloco-lateral {
+  position: fixed;
+  top: 150px;
+  right: 40px;
+  width: 260px;
+  background: #FFE7A6;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #00000020;
+  color: #8a4a1b;
+  font-weight: 700;
+  z-index: 999;
+}
+ 
+.bloco-lateral h3 {
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 1.3;
+}
+ 
+.campo {
+  width: 100%;
+  height: 48px;
+  background: #d9d9d9;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin: 12px 0;
+  padding: 0 15px;
+  font-size: 15px;
+  font-weight: 200;
+  color: #333;
+}
+ 
+.campo::placeholder {
+  color: #555;
+}
+ 
+ 
+.btn-lateral {
+  display: block;
+  background: #FFD461;
+  text-align: center;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #833E19;
+  text-decoration: none;
+  transition: 0.2s;
+}
+ 
+.btn-lateral:hover {
+  background: #ffae00;
+  color: white;
+}
+ 
+ 
+@media (max-width: 900px) {
+  .bloco-lateral {
+    position: static;    
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: none;
+  }
+ 
+  .btn-lateral {
+    width: 100%;
+  }
+}
+ 
