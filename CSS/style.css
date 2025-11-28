@@ -69,14 +69,14 @@ nav a:hover {
   color: #c24e1a;
 }
 .h1-responsivo .btn {
-  background: #ff4800;
-  color: #fff;
+  background: #FFD461;
+  color: #c24800;
   transition: 0.2s;
   font-weight: bold;
 }
 .h1-responsivo .btn:hover {
-  background: #FFD461;
-  color: #c24800;
+  background: #ff4800;
+  color: #fff;
   font-weight: bold;
 }
 .h1-responsivo .img-exemplo {
@@ -278,21 +278,21 @@ max-width: 260px;
  
 .btn-lateral {
   display: block;
-  background: #ff4800;
+  background: #FFD461;
   text-align: center;
   padding: 12px;
   border-radius: 10px;
   margin-top: 10px;
   font-size: 16px;
   font-weight: bold;
-  color: #fff;
+  color: #c24800;
   text-decoration: none;
   transition: 0.2s;
 }
  
 .btn-lateral:hover {
-  background: #FFD461;
-  color: #c24800;
+  background: #ff4800;
+  color: #fff;
 }
  
  
