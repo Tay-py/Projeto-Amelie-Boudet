@@ -204,7 +204,7 @@ nav a:hover {
   right: 40px;
   width: 100%;
 max-width: 260px;
-  background: #FFE7A6;
+  background: #FFEEB0;
   padding: 25px;
   border-radius: 20px;
   box-shadow: 0 0 5px #00000020;
@@ -264,7 +264,7 @@ max-width: 260px;
 .campo {
   width: 100%;
   height: 48px;
-  background: #d9d9d9;
+  background: #FAFFD7;
   border: none;
   outline: none;
   border-radius: 10px;
