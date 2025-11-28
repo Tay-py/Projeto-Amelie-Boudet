@@ -193,12 +193,13 @@ nav a:hover {
   font-size: 20px;
   margin-bottom: 10px;
 }
- 
+
 .bloco-lateral {
   position: fixed;
   top: 150px;
   right: 40px;
-  width: 260px;
+  width: 100%;
+max-width: 260px;
   background: #FFE7A6;
   padding: 25px;
   border-radius: 20px;
@@ -206,6 +207,48 @@ nav a:hover {
   color: #8a4a1b;
   font-weight: 700;
   z-index: 999;
+}
+
+
+@media (max-width: 1200px) {
+  .bloco-lateral {
+    right: 20px;
+    top: 120px;
+    max-width: 220px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .bloco-lateral {
+    position: static; 
+    max-width: 100%;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: none;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .bloco-lateral {
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  .campo {
+    height: 42px;
+    font-size: 14px;
+  }
+
+  .btn-lateral {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+.bloco-lateral, .bloco-lateral * {
+  box-sizing: border-box;
 }
  
 .bloco-lateral h3 {
