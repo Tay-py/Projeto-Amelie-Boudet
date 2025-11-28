@@ -55,6 +55,7 @@ nav a:hover {
   padding: 10px 40px 40px 40px;
   border-radius: 12px;
   margin-top: 0;
+  padding-top: 0;
 }
  
 .h1-responsivo {
@@ -119,6 +120,7 @@ nav a:hover {
   margin: 20px auto;
   color: #5c3a00;
   line-height: 1.5;
+  margin-top: 10px;
 }
 .quadrado-responsivo {
   display: flex;
@@ -148,6 +150,8 @@ nav a:hover {
   border-radius: 12px;
   color: #5c3a00;
   line-height: 1.6;
+  margin-top: -5px; 
+  padding-top: 0;
 }
  
 .quadradinho {
