@@ -20,7 +20,7 @@ header {
 }
 
 .logo-area {
-  justify-content: center;
+  padding-right: 95%;
 }
 
 .logo {
@@ -144,4 +144,8 @@ footer.footer {
   background: #efbe47;          
   padding: 40px 20px;
   box-sizing: border-box;
+}
+
+.inicio {
+  padding-left: 70%;
 }
