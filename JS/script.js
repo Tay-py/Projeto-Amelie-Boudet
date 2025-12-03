@@ -1,11 +1,32 @@
-const carrossel = document.querySelector(".carrossel");
-const btnPrev = document.querySelector(".prev");
-const btnNext = document.querySelector(".next");
+document.addEventListener("DOMContentLoaded", () => {
+  
+  const carrosseis = document.querySelectorAll(".carrossel-container");
 
-btnNext.addEventListener("click", () => {
-  carrossel.scrollBy({ left: 250, behavior: "smooth" });
-});
+  carrosseis.forEach(container => {
+    const carrossel = container.querySelector(".carrossel");
+    const prevBtn = container.querySelector(".prev");
+    const nextBtn = container.querySelector(".next");
 
-btnPrev.addEventListener("click", () => {
-  carrossel.scrollBy({ left: -250, behavior: "smooth" });
+    function slideAmount() {
+      const img = carrossel.querySelector("img");
+      return img.offsetWidth + 20;
+    }
+
+    prevBtn.addEventListener("click", () => {
+      carrossel.scrollLeft -= slideAmount();
+    });
+
+    nextBtn.addEventListener("click", () => {
+      carrossel.scrollLeft += slideAmount();
+    });
+
+    setInterval(() => {
+      if (carrossel.scrollLeft + carrossel.clientWidth >= carrossel.scrollWidth) {
+        carrossel.scrollLeft = 0;
+      } else {
+        carrossel.scrollLeft += slideAmount();
+      }
+    }, 3000);
+  });
+
 });

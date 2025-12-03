@@ -6,35 +6,36 @@ body {
   padding: 0;
 }
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 header {
-  background-color: #ffffff;
-  padding: 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
+  justify-content: center;
+  text-align: center;
 }
+
 .logo-area {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  justify-content: center;
 }
+
 .logo {
   width: 80px;
   border-radius: 12px;
 }
 
 nav {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
 }
+
 nav a {
   text-decoration: none;
   color: #000;
@@ -43,4 +44,104 @@ nav a {
 }
 nav a:hover {
   color: #c24800;
+}
+
+.quemsomos{
+  color: #c24800;
+}
+
+.nossahistoria {
+  background-color: #ffeeb0;
+}
+
+.missao {
+  color: #c24800;
+  
+
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #faffd7;
+}
+
+.container {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer {
+  background: #efbe47;
+  padding: 30px 20px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer > * {
+  flex: 1 1 250px;
+}
+
+.footer nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer nav ul li a {
+  font-size: 16px;
+}
+@media (max-width: 600px) {
+
+  .logo {
+    width: 60px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .atividades {
+    font-size: 24px;
+  }
+
+  .segundoparagrafo {
+    font-size: 16px;
+  }
+
+  .carrossel-header h2 {
+    font-size: 24px;
+  }
+
+  .carrossel-header p {
+    font-size: 16px;
+  }
+
+  .carrossel img {
+    width: 100px;
+  }
+
+  .footer {
+    padding: 20px 15px;
+    flex-direction: column;
+  }
+
+  .footer > * {
+    flex: 1 1 auto;
+  }
+}
+footer.footer {
+  width: 100vw;                    
+  margin-left: calc(50% - 50vw);  
+  background: #efbe47;          
+  padding: 40px 20px;
+  box-sizing: border-box;
 }

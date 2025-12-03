@@ -1,15 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
 body {
   background: #faffd7;
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
+
 header {
   background-color: #FAFFD7;
   padding: 20px;
@@ -19,54 +22,51 @@ header {
   flex-wrap: wrap;
   gap: 20px;
 }
+
 .logo-area {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .logo {
   width: 80px;
   border-radius: 12px;
 }
+
 nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 15px;
 }
+
 nav a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
   transition: 0.2s;
 }
+
 nav a:hover {
   color: #c24800;
 }
+
 .atividades-bloco {
   background: #FAFFD7;
-  padding: 5px 5px;
+  padding: 5px;
   margin: 5px 0;
   border-radius: 12px;
-  color: #5c3a00;
-  line-height: 1.6;
-  margin-top: -5px; 
-  padding-top: 0;
 }
-.atividadezinha {
-  margin-bottom: 20px;
-}
+
 .atividades {
   color: #833e19;
   font-weight: 700;
   font-size: 28px;
-  margin-bottom: 10px;
 }
+
 .segundoparagrafo {
   color: #000;
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 10px;
 }
 
 .carrossel-container {
@@ -75,7 +75,6 @@ nav a:hover {
   border-radius: 25px;
   margin: 25px 0;
 }
-
 
 .carrossel-header {
   background: #f8c94b;
@@ -88,41 +87,31 @@ nav a:hover {
   margin: 0;
   font-size: 32px;
   color: #6b2a00;
-  font-weight: 700;
 }
 
 .carrossel-header p {
   margin: 5px 0 0;
   font-size: 18px;
   color: #443000;
-  font-weight: 500;
 }
 
-
 .carrossel-wrapper {
-  background: #ffefc1;
-  padding: 25px;
-  border-radius: 20px;
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 15px;
+  overflow: hidden;
+  padding: 15px;
 }
 
 .carrossel {
   display: flex;
-  gap: 50px;
-  overflow-x: auto;
+  gap: 20px;
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 
-.carrossel::-webkit-scrollbar {
-  display: none;
-}
-
 .carrossel img {
-  width: 140px;
-  filter: brightness(1); 
+  width: 120px;
   transition: 0.2s;
 }
 
@@ -138,5 +127,16 @@ nav a:hover {
   background: white;
   font-size: 28px;
   cursor: pointer;
-  padding: 0;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carrossel-btn.prev {
+  left: 5px;
+}
+
+.carrossel-btn.next {
+  right: 5px;
 }
