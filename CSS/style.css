@@ -323,3 +323,31 @@ max-width: 260px;
   opacity: 1;
   transform: translateY(0);
 }
+.footer {
+  background: #efbe47;
+  padding: 30px 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer > * {
+  flex: 1 1 250px;
+}
+
+.footer nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer nav ul li a {
+  font-size: 16px;
+}
+footer.footer {
+  width: 100vw;                    
+  margin-left: calc(50% - 50vw);  
+  background: #efbe47;          
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
