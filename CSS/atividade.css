@@ -197,14 +197,70 @@ nav a:hover {
     flex-direction: column;
   }
 
-  .footer > * {
-    flex: 1 1 auto;
-  }
+
+.footer-wrapper {
+    width: 100%;
+    background: #efbe47;
 }
-footer.footer {
-  width: 100vw;                    
-  margin-left: calc(50% - 50vw);  
-  background: #efbe47;          
-  padding: 40px 20px;
-  box-sizing: border-box;
+
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.texto-footer {
+    flex: 2;  
+}
+
+.menu-footer,
+.social-footer,
+.contato-footer {
+    flex: 1;
+}
+
+.footer h2 {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    color: #5c3a00;
+    font-weight: 700;
+}
+
+
+.footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #000;
+}
+
+.footer ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer ul li a:hover {
+    color: #c24800;
+}
+
+
+@media (max-width: 900px) {
+    .footer {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .texto-footer {
+        margin-bottom: 20px;
+    }
 }
