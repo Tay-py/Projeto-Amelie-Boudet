@@ -65,29 +65,13 @@ nav a:hover {
   border-radius: 12px;
 }
 
-@media (max-width: 600px) {
-  .h1-responsivo {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .h1-responsivo .texto {
-    text-align: center;
-  }
-
- .img-exemplo {
-  width: 100%;
-  max-width: 280px; 
-  border-radius: 10px;
-}
-}
-
 .h1-responsivo {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
 }
+
 .h1-responsivo .texto {
   flex: 1;
   text-align: left;
@@ -96,7 +80,7 @@ nav a:hover {
 
 .h1-responsivo .img-exemplo {
   width: 100%;
-  max-width: 350px; 
+  max-width: 350px;
   border-radius: 10px;
 }
 
@@ -111,7 +95,7 @@ nav a:hover {
   }
 
   .h1-responsivo .img-exemplo {
-    max-width: 90%; 
+    max-width: 90%;
   }
 }
 
@@ -131,7 +115,6 @@ nav a:hover {
   background: #8e370f;
 }
 
-
 .quadrado {
   background-color: #ffeeb0;
   border-radius: 16px;
@@ -150,7 +133,7 @@ nav a:hover {
 
 @media (max-width: 600px) {
   .quadrado-responsivo {
-    flex-direction: column; 
+    flex-direction: column;
     text-align: center;
   }
 
@@ -160,15 +143,13 @@ nav a:hover {
   }
 }
 
-
 .quadrado-img {
   max-width: 280px;
   border-radius: 10px;
 }
 
-
 .quem-somos-bloco {
-  background: #FAFFD7;
+  background: #faffd7;
   padding: 5px 5px;
   margin: 5px 0;
   border-radius: 12px;
@@ -194,21 +175,19 @@ nav a:hover {
   display: none;
 }
 
-
 @media (max-width: 900px) {
   .bloco-mobile-only {
     display: block;
     margin-top: 30px;
   }
 
- 
   .bloco-lateral {
     position: static;
     width: 100%;
     max-width: 100%;
     margin: 20px 0 0 0;
     box-shadow: none;
-    background: #FFEEB0;
+    background: #ffeeB0;
     padding: 20px;
     border-radius: 15px;
   }
@@ -217,7 +196,7 @@ nav a:hover {
 .campo {
   width: 100%;
   height: 48px;
-  background: #FAFFD7;
+  background: #faffd7;
   border: none;
   outline: none;
   border-radius: 10px;
@@ -229,7 +208,7 @@ nav a:hover {
 
 .btn-lateral {
   display: block;
-  background: #FFD461;
+  background: #ffd461;
   text-align: center;
   padding: 12px;
   border-radius: 10px;
@@ -246,7 +225,6 @@ nav a:hover {
   color: #fff;
 }
 
-
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -259,62 +237,115 @@ nav a:hover {
 }
 
 .footer {
-    background: #efbe47;
-    width: 100%;
-    padding: 40px 30px;
-
-    margin: 0;
-    border-radius: 0;
-
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    box-sizing: border-box;
+  background: #efbe47;
+  width: 100%;
+  padding: 40px 30px;
+  margin: 0;
+  border-radius: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  box-sizing: border-box;
 }
 
 .footer-col {
-    flex: 1;
+  flex: 1;
 }
 
 .texto-footer {
-    flex: 2;
+  flex: 2;
 }
 
 .footer h2 {
-    margin: 0 0 12px 0;
-    font-size: 20px;
-    color: #5c3a00;
-    font-weight: 700;
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  color: #5c3a00;
+  font-weight: 700;
 }
 
 .footer ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .footer ul li {
-    margin-bottom: 8px;
-    color: #000;
-    font-size: 16px;
+  margin-bottom: 8px;
+  color: #000;
+  font-size: 16px;
 }
 
 .footer ul li a {
-    color: #000;
-    text-decoration: none;
-    transition: 0.2s;
+  color: #000;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
 .footer ul li a:hover {
-    color: #c24800;
+  color: #c24800;
 }
 
 @media (max-width: 900px) {
-    .footer {
-        flex-direction: column;
-        gap: 30px;
-        text-align: left;
-    }
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+    text-align: left;
+  }
+}
+.box-fixa {
+  position: fixed;
+  top: 140px;        
+  right: 20px;       
+  bottom: auto;     
+  width: 260px;
+  background: #ffd266;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+.box-fixa h3 {
+margin: 0 0 15px 0;
+color: #8a4b00;
+font-size: 18px;
+font-weight: 700;
+}
+
+
+.campo-fixa {
+width: 100%;
+height: 45px;
+background: #fcffcc; 
+border: none;
+border-radius: 8px;
+margin-bottom: 12px;
+padding: 0 12px;
+font-size: 15px;
+outline: none;
+}
+
+
+.btn-doar-fixa {
+display: block;
+background: #ffbb44; 
+text-align: center;
+padding: 12px;
+border-radius: 10px;
+margin-top: 5px;
+font-size: 16px;
+font-weight: bold;
+color: #8a4b00;
+text-decoration: none;
+}
+
+
+.btn-doar-fixa:hover {
+background: #ff9800;
+color: white;
 }

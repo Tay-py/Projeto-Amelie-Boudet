@@ -139,128 +139,51 @@ nav a:hover {
 
 .carrossel-btn.next {
   right: 5px;
-}
-
-.footer {
-  background: #efbe47;
-  padding: 30px 20px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.footer > * {
-  flex: 1 1 250px;
-}
-
-.footer nav ul {
-  padding: 0;
-  margin: 0;
-}
-
-.footer nav ul li a {
-  font-size: 16px;
-}
-@media (max-width: 600px) {
-
-  .logo {
-    width: 60px;
-  }
-
-  nav a {
-    font-size: 16px;
-  }
-
-  .atividades {
-    font-size: 24px;
-  }
-
-  .segundoparagrafo {
-    font-size: 16px;
-  }
-
-  .carrossel-header h2 {
-    font-size: 24px;
-  }
-
-  .carrossel-header p {
-    font-size: 16px;
-  }
-
-  .carrossel img {
-    width: 100px;
-  }
-
-  .footer {
-    padding: 20px 15px;
-    flex-direction: column;
-  }
-
-
-.footer-wrapper {
+}footer.footer {
     width: 100%;
-    background: #efbe47;
-}
-
-.footer {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px;
+    background: #e7b543; /* amarelo igual da imagem */
+    padding: 50px 60px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 40px;
+    gap: 60px;
+    box-sizing: border-box;
 }
 
-.texto-footer {
-    flex: 2;  
-}
-
-.menu-footer,
-.social-footer,
-.contato-footer {
+.footer-col {
     flex: 1;
+    min-width: 200px;
 }
 
-.footer h2 {
-    margin: 0 0 12px 0;
-    font-size: 20px;
-    color: #5c3a00;
+.footer-col h3 {
+    font-size: 18px;
     font-weight: 700;
+    margin-bottom: 15px;
+    color: #6b4e00; /* marrom do título */
 }
 
-
-.footer ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.footer ul li {
-    margin-bottom: 8px;
+.footer-col p,
+.footer-col ul li,
+.footer-col a {
     font-size: 16px;
     color: #000;
-}
-
-.footer ul li a {
-    color: #000;
+    line-height: 1.6;
     text-decoration: none;
-    transition: 0.2s;
 }
 
-.footer ul li a:hover {
-    color: #c24800;
+.footer-col ul {
+    list-style: none;
+    padding: 0;
 }
 
+.footer-col ul li {
+    margin-bottom: 6px;
+}
 
-@media (max-width: 900px) {
-    .footer {
-        flex-direction: column;
-        text-align: left;
-    }
+.footer a:hover {
+    text-decoration: underline;
+}
 
-    .texto-footer {
-        margin-bottom: 20px;
-    }
+.descricao {
+    max-width: 500px;
 }
